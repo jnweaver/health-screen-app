@@ -1,0 +1,81 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+  
+    <p>UW-Madison cov mejyig yog ib pawg pab tswj kom peb ib tsoom muaj kev nyabxeeb –koj nrog tib si.</p>
+<p>Thov teb cov lus nug no txhua hnub ua ntej koj npaj yuav tuaj rau hauv tsev kawm ntawv.</p>
+<p>Koom ua ke peb yuav tswj tau kom ib tsoom hauv tsev kawm ntawv muaj kev nyabxeeb:</p>
+<ul>
+<li>Nyob kom sib nrug deb (ze kawm yog 6 ruam) qhov twg ua tau.</li>
+<li>Yuav tsum npog qhov ncauj qhov ntswg tej qhov muaj neeg coob hauv tsev, nrog rau cov hoob kawm, thiab sab nraum zoov uas nyob tsis tau nrug deb. Tej zaum yuav muaj kev pab rau cov npog tsis tau vim muaj kev xiam oob qhab, mob los lwm yam.</li>
+<li>Ntxuav koj ob sab tes tas li.</li>
+</ul>
+<p>Cov <em>Badgers</em> ib tug pab saib ib tug. Yog koj xav tau kev pab ntxiv, thov hu:</p>
+<ul>
+<li><a href="https://www.uhs.wisc.edu">University Health Services</a> 608-265-5600</li>
+<li><a href="https://doso.students.wisc.edu">Dean of Students Office</a> 608-263-5700</li>
+</ul>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>Txhob tuaj rau hauv tsev kawm ntawv. Yog koj nyob hauv tsev kawm ntawv cov tsev nyob, nyob twj ywm ntshe ho mus ntsib kws kuaj mob xwb.</li>
+<li>Teem caij mus kuaj sim COVID-19 hauv tsev kawm ntawv hauv <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx">MyUHS</a>.</li>
+<li>Nyob twj ywm hauv koj lub tsev nyob hauv tsev kawm ntawv los txhob tuaj rau hauv tsev kawm ntawv txog thaum University Health Services hais tias tsis muaj mob los pub rov tuaj hauv tsev kawm ntawv.</li>
+</ul>
+<p>Mus saib <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">qhov kev ua raws ntxiv (<em>additional</em> <em>guidance</em></a><u>)</u> nyob hauv lub Centers for Disease Control.</p>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>Txhob tuaj rau hauv tsev kawm ntawv.</li>
+<li>Yog koj nyob hauv tsev kawm ntawv cov tsev nyob, nyob twj ywm hauv koj chav.</li>
+<li>Yog cov neeg taug qab kev noj qab hauv huv rau pejxeem twb nrog koj tham lawm, ua raws li lawv hais.</li>
+</ul>
+<p>Yog cov neeg taug qab kev noj qab haus huv rau pejxeem tsis tau nrog koj tham, hu <a href="https://www.uhs.wisc.edu/make-an-appointment/">University Health Services</a> rau kev qhia ua raws ua ntej koj tawm ntawm koj chav mus los rov tuaj rau hauv tsev kawm ntawv.</p>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+    <ul>
+<li>Txhob tuaj rau hauv tsev kawm ntawv.</li>
+<li>Yog koj nyob hauv tsev kawm ntawv cov tsev nyob, nyob twj ywm hauv koj chav.</li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Pib cais koj tus kheej rau 14-hnub.</a></li>
+<li>Yog muaj <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">cov cim mob COVID-19</a> tshwm, teem caij mus kuaj tus kab mob COVID-19 hauv <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx">MyUHS</a> .</li>
+<li>Rov tuaj rau hauv tsev kawm ntawv tom qab cais tus kheej 14- hnub thiab tsis muaj cim mob COVID-19 lawm xwb.</li>
+</ul>
+<p>Mus saib <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">qhov kev ua raws ntxiv (<em>additional</em> <em>guidance</em></a><u>)</u> nyob hauv lub Centers for Disease Control.</p>
+  
+{% endblock %}

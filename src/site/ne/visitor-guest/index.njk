@@ -1,0 +1,74 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+  
+    <p>तपाईं सहित <em>UW-Madison</em> क्याम्पस समुदायलाई सुरक्षित राख्नका लागि धेरै व्यक्तिहरूले भूमिका खेल्दछन्&nbsp;।</p>
+<p>तपाईं क्याम्पसमा आउनु अघि कृपया प्रत्येक दिन यी प्रश्नहरूको उत्तर दिनुहोस्&nbsp;।</p>
+<p>साथमा हामीले हाम्रो क्याम्पस समुदायलाई सुरक्षित राख्न सक्दछौं:</p>
+<ul>
+<li>जहाँ सक्नुहुन्छ भौतिक दूरी (कमसेकम छ फिट) कायम राख्नुहोस्&nbsp;।</li>
+<li>क्याम्पसको कक्षाकोठा सहित सबै भित्री सार्वजानिक ठाउँहरूमा, र भौतिक दूरी कायम गर्न नसकिने बाहिरी ठाउँहरूमा अनुहार ढाक्ने चीजहरू अनिवार्य छ । अशक्तता, स्वास्थ्य, वा अरू कुनै कारणहरूले सो गर्न नसक्ने व्यक्तिहरूलाई व्यवस्था मिलाउन सकिनेछ&nbsp;।</li>
+</ul>
+<p>तपाईंको हात बारम्बार धुनुहोस्&nbsp;।</p>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>क्याम्पसमा नआउनुहोस्&nbsp;।</li>
+<li><em>COVID-19</em> को परीक्षण वा क्याम्पसमा काम गर्न मिल्ने अनुमतिको लागि तपाईंको स्वास्थ्य सेवा प्रदायकलाई सम्पर्क गर्नुहोस्।</li>
+<li>तपाईंको परीक्षणको नतिजा नेगेटिभ नभएसम्म वा तपाईंको स्वास्थ्य सेवा प्रदायकले तपाईंलाई क्याम्पसमा फर्कन मिल्ने सल्लाह नदिएसम्म क्याम्पसमा नफर्कनुहोस्&nbsp;।</li>
+<li>रोग नियन्त्रण तथा रोकथामको यो (<em>Centers for Disease Control</em>) <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">थप मार्गदर्शन</a> हेर्नुहोस्&nbsp;।</li>
+</ul>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>क्याम्पसमा नआउनुहोस्&nbsp;।</li>
+<li>यदि तपाईं <em>contact tracers</em> जस्ता जनस्वास्थ्य अधिकारीहरूसँग सम्पर्कमा रहनुभएको छ भने, वहाँहरूको मार्गदर्शनको पालना गर्नुहोस्&nbsp;।</li>
+<li>यदि तपाईंले अहिलेसम्म जनस्वास्थ्य मार्गदर्शन पाउनुभएको छैन भने, तपाईंको कोठाबाट बाहिर निस्कन वा क्याम्पसमा फर्कनु अघि <a href="https://www.publichealthmdc.com"><em>Public Health Madison &amp; Dane County</em></a> लाई सम्पर्क गर्नुहोस्&nbsp;।</li>
+</ul>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+    <ul>
+<li>क्याम्पसमा नआउनुहोस्&nbsp;।</li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">१४ दिनको क्वारेन्टाइन सुरु गर्नुहोस्&nbsp;।</a></li>
+<li>यदि <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><em>COVID-19</em> का लक्षणहरू</a> देखा परे भने, मूल्याङ्कन वा <em>COVID-19</em> को परीक्षणको लागि तपाईंको स्वास्थ्य सेवा प्रदायकलाई सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>१४ दिनको क्वारेन्टाइन र <em>COVID-19</em> को लक्षणहरू नभएपछि मात्र क्याम्पसमा फर्कनुहोस्&nbsp;।</li>
+<li>रोग नियन्त्रण तथा रोकथामको यो (<em>Centers for Disease Control</em>) <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">थप मार्गदर्शन</a> हेर्नुहोस्&nbsp;।</li>
+</ul>
+  
+{% endblock %}

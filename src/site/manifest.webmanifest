@@ -1,0 +1,15 @@
+{
+  "background_color": "white",
+  "description": "COVID-19 self-monitoring survey for members of and visitors to the UW–Madison campus community.",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/dist/images/favicons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "name": "UW Healthscreen",
+  "short_name": "UW Healthscreen",
+  "start_url": "/index.html"
+}

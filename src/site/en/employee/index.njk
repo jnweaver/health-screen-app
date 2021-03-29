@@ -1,0 +1,83 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+
+{% block panel_5 %}
+<p>UW-Madison employees play an important part in keeping our community safe — including you.</p>
+
+<p>Please answer these questions every day before you plan to come to on-site work.</p>
+
+<p>Together we can keep our campus community safe:</p>
+<ul>
+  <li>Maintain physical distancing (minimum six feet) wherever possible.</li>
+  <li>Face coverings are required to be worn in all campus indoor public spaces, including classrooms, and outside when physical distancing is not possible. Accommodations may be made for those unable to do this for disability, medical, or other reasons.</li>
+  <li>Wash your hands often.</li>
+</ul>
+{% endblock %}
+
+{% set guidance_1_2 = '<h2>Guidance for Employees</h2><ul class="uw-padding-top-2 uw-list-tight">
+  <li>Do not come to the workplace.</li>
+  <li>Contact your healthcare provider for a COVID-19 test or approval for on-site work. Tests are available on campus and can be scheduled through <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx">MyUHS</a>.</li>
+  <li>Do not come to the workplace until your test result is negative or your healthcare provider approves of you going to the workplace.</li>
+  <li>Notify your supervisor you will be away from work.</li>
+  <li>For leave resources, discuss with your <a href="https://hr.wisc.edu/docs/hr-contacts.pdf">local or divisional HR contact</a>.</li>
+  <li>To share confidential medical information, contact your <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">Divisional Disability Representative</a> (DDR).</li>
+  <li>Refer to this <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">additional guidance</a> from the Centers for Disease Control.</li>
+</ul>' %}
+
+{% block guidance_1 %}
+  {{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+<h2>Guidance for Employees</h2>
+<ul>
+  <li>Do not come to the workplace.</li>
+  <li>If you have been in contact with public health officials, such as contact tracers, follow their guidance.</li>
+  <li>If you have not yet received public health guidance, contact <a href="https://www.uhs.wisc.edu/make-an-appointment/">University Health Services</a> prior to returning to on-site work.</li>
+  <li>Notify your supervisor you will be away from work.</li>
+  <li>For leave resources, <a href="https://hr.wisc.edu/docs/hr-contacts.pdf">contact your local or divisional HR</a> or your <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">Divisional Disability Representative</a> (DDR).</li>
+  <li>To share confidential medical information, contact your <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">Divisional Disability Representative</a> (DDR).</li>
+</ul>
+{% endblock %}
+
+
+{% block guidance_4 %}
+<h2>Guidance for Employees</h2>
+<ul>
+  <li>Do not come to the workplace.</li>
+  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Begin a 14-day self-quarantine.</a></li>
+  <li>If <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">COVID-19 symptoms</a> develop, contact your healthcare provider for assessment or a COVID-19 test. Tests are also available on campus and can be scheduled through <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx">MyUHS</a>.</li>
+  <li>Notify your supervisor you will be away from work.</li>
+  <li>For leave resources, <a href="https://hr.wisc.edu/docs/hr-contacts.pdf">contact your local or divisional HR</a> or your <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">Divisional Disability Representative</a> (DDR).</li>
+  <li>To share confidential medical information, contact your <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">Divisional Disability Representative</a> (DDR).</li>
+  <li>Return to campus only after a 14-day self-quarantine and having no COVID-19 symptoms.</li>
+  <li>Refer to this <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">additional guidance</a> from the Centers for Disease Control.</li>
+</ul>
+{% endblock %}

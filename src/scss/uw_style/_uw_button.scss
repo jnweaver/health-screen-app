@@ -1,0 +1,119 @@
+// ***********************
+// Call to action buttons
+// ***********************
+.uw-button {
+  display: inline-block;
+  // text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: .925rem;
+  line-height: 1;
+  padding: .5rem;
+  // margin: 1rem 0 0;
+  background: $uw-red;
+  color: #fff;
+  box-shadow: bottom-shadow(1), top-shadow(1);
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none;
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border: 3px solid $uw-red;
+  border-radius: 2px;
+  text-transform: none;  
+  &:hover, &:focus {
+    color: $uw-red;
+    background-color: #ffffff;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    border: 3px solid $uw-red;
+    // box-shadow: bottom-shadow(3), top-shadow(3);
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: 1px dashed $uw-red;
+    outline-offset: -4px;
+  }
+  svg {
+    margin-left: 2px;
+    width: 0.6rem;
+    height: 0.9rem;
+    fill: currentColor;
+    vertical-align: -1px;
+  }
+  &.uw-button-large {
+    padding: 0.625em 1.625rem;
+    font-size: 1.25rem;
+  }
+  &.uw-button-expanded {
+    display: block;
+    width: 100%;
+  }
+  &.uw-button-blue {
+    background: $uw-anchor-color;
+    border: 3px solid $uw-anchor-color;
+    &:hover, &:focus {
+      background-color: #ffffff;
+      color: $uw-anchor-color;
+      border: 3px solid $uw-anchor-color;
+    }
+    &:focus {
+      outline: 1px dashed $uw-anchor-color;
+    }
+  }
+  &[disabled] {
+    background-color: $uw-gray-lightest;
+    color: $uw-footer-border;
+    border: 3px solid $uw-gray-light;
+    cursor: auto;
+    &:hover, &:focus {
+      background-color: $uw-gray-lightest;
+      color: $uw-footer-border;
+      border: 3px solid $uw-gray-light;
+      outline: none;
+    }
+  }
+}
+.uw-button-reverse {
+  background-color: white;
+  border: 3px solid $uw-red;
+  color: $uw-footer-border;
+  &:hover, &:focus {
+    background-color: $uw-red;
+    color: $uw_white;
+  }
+  &:focus {
+    outline: 1px dashed $uw_white;
+  }
+}
+.uw-button-reverse-blue {
+  background-color: white;
+  border: 3px solid $uw-anchor-color;
+  color: $uw-footer-border;
+  &:hover, &:focus {
+    background-color: $uw-anchor-color;
+    border-color: $uw-anchor-color;
+    color: $uw_white;
+  }
+  &:focus {
+    outline: 1px dashed white;
+  }
+}
+.uw-button-transparent {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  &:hover, &:focus {
+    background-color: #ffffff;
+    color: $uw-gray-darkest;
+  }
+  &:focus {
+    outline: 1px dashed $uw-anchor-color;
+  }
+  &[disabled] {
+    background-color: transparent;
+  }
+}

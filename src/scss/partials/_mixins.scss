@@ -1,0 +1,7 @@
+@mixin text_shadow() {
+  text-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+
+@mixin drop_shadow() {
+  box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
+}

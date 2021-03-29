@@ -1,0 +1,29 @@
+.uw-list-buttons {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  @include breakpoint(rem-calc(640)) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: rem-calc(720);
+    > li {
+      flex: 0 0 50%;
+      width: 50%;
+      text-align: center;
+      margin: 0;
+      padding: 0 1rem 2rem;
+      > .uw-button {
+        margin: 0;
+        width: 100%;
+      }
+    }
+    &.uw-list-buttons--3-col {
+      max-width: rem-calc(1080);
+      > li {
+        flex: 33.3333%;
+        width: 33.3333%;
+      }
+    }
+  }
+}

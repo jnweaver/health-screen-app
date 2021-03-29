@@ -1,0 +1,126 @@
+.page-stories {
+  h1 {
+    font-size:1.625rem;
+
+  }
+}
+#ci-story-filter {
+  form {
+    max-width:350px;
+    margin:0 auto;
+    label {
+      position:absolute;
+      left:-9000px;
+      top:-1000px;
+    }
+    > div {
+      display:flex;
+      &:first-child {
+        //justify-content:space-between;
+        justify-content:flex-end;
+        align-items:end;
+      }
+    }
+  }
+  label {
+    font-size:1.5rem;
+    white-space:nowrap;
+    padding-right:0.5rem;
+
+  }
+
+  input[type="submit"] {
+    display:none;
+    font-size:1rem;
+    text-transform:uppercase;
+    font-weight:700;
+    padding:1px 1rem;
+    border:1px solid $uw_anchor_blue;
+  }
+}
+#ci-clear-filters {
+  text-decoration:underline;
+  color:$uw_anchor_blue;
+
+}
+#ci-story-pagination {
+  display:none;
+  margin-top:2rem;
+  li {
+    background:transparent !important;
+  }
+  ul.page-numbers {
+    background:transparent;
+  }
+  .page-numbers {
+    font-size:1.25rem;
+    display:inline-block;
+    padding: 0.175rem 1.25rem !important;
+    background:#f7f7f7;
+    &.dots {
+      background-color:transparent !important;
+    }
+    &.current {
+      background-color:$uw_anchor_blue;
+    }
+  }
+  a {
+    text-decoration:none !important;
+    &:hover, &:active {
+      color:$white !important;
+      background:$uw_anchor_blue;
+    }
+  }
+}
+.ci-story {
+  h2 {
+    text-transform:none;
+    font-weight:400;
+    font-size:1.125rem;
+    margin-bottom:0;
+    span {
+      display:block;
+      text-transform:uppercase;
+      color:$uw_main;
+      font-weight:700;
+      font-size:0.875rem;
+    }
+    a {
+      text-decoration:none !important;
+      &:after {
+        content:' \00bb';
+      }
+      &:hover, &:active {
+        text-decoration:underline !important;
+      }
+    }
+
+  }
+}
+.ci-story-date {
+  font-size:1rem;
+}
+.no-js {
+  .ci-load-more {
+    display:none;
+  }
+  #ci-story-filter {
+    form {
+      > div {
+        &:first-child {
+          justify-content:space-between;
+          align-items:end;
+        }
+      }
+    }
+    input[type="submit"] {
+      display:inline-block;
+    }
+  }
+  #ci-clear-filters {
+    display:none;
+  }
+  #ci-story-pagination {
+    display:block;
+  }
+}

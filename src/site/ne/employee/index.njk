@@ -1,0 +1,81 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+  
+    <p>तपाईं सहित हाम्रो समुदायलाई सुरक्षित राख्नका लागि <em>UW-Madison</em> का कर्मचारीहरूले महत्त्वपूर्ण भूमिका खेल्दछन्&nbsp;।</p>
+<p>तपाईं क्याम्पसमा आउनु अघि कृपया प्रत्येक दिन यी प्रश्नहरूको उत्तर दिनुहोस्&nbsp;।</p>
+<p>साथमा हामीले हाम्रो क्याम्पस समुदायलाई सुरक्षित राख्न सक्दछौं:</p>
+<ul>
+<li>जहाँ सक्नुहुन्छ भौतिक दूरी (कमसेकम छ फिट) कायम राख्नुहोस्&nbsp;।</li>
+<li>क्याम्पसको कक्षाकोठा सहित सबै भित्री सार्वजानिक ठाउँहरूमा, र भौतिक दूरी कायम गर्न नसकिने बाहिरी ठाउँहरूमा अनुहार ढाक्ने चीजहरू अनिवार्य छ&nbsp;। अशक्तता, स्वास्थ्य, वा अरू कुनै कारणहरूले सो गर्न नसक्ने व्यक्तिहरूलाई व्यवस्था मिलाउन सकिनेछ&nbsp;।</li>
+<li>तपाईंको हात बारम्बार धुनुहोस्&nbsp;।</li>
+</ul>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>काममा नआउनुहोस्&nbsp;।</li>
+<li><em>COVID-19</em> को परीक्षण वा क्याम्पसमा काम गर्ने अनुमतिको लागि तपाईंको स्वास्थ्य सेवा प्रदायकलाई सम्पर्क गर्नुहोस्। क्याम्पसमा परीक्षणहरू उपलब्ध छन् र <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx"><em>MyUHS</em></a> बाट यसको लागि समय बनाउन सकिन्छ&nbsp;।</li>
+<li><a href="https://hr.wisc.edu/smart-restart/#returning-to-workplace">काममा फर्केर आउनको लागि यो मार्गदर्शन पालना गर्नुहोस्&nbsp;।</a></li>
+<li>तपाईं काममा नआउने कुरा तपाईंको सुपरभाईजरलाई थाहा दिनुहोस्&nbsp;।</li>
+<li>बिदा संसाधनका लागि, तपाईंको स्थानीय वा विभागीय <a href="https://hr.wisc.edu/docs/hr-contacts.pdf">स्थानीय वा विभागीय <em>HR</em></a> लाई सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>गोपनीय स्वास्थ्यको जानकारी थाहा दिनको लागि, तपाईंको <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">विभागीय अशक्तता प्रतिनिधिलाई</a> (<em>DDR</em>) सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>रोग नियन्त्रण तथा रोकथामको यो (<em>Centers for Disease Control</em>) <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">थप मार्गदर्शन</a> हेर्नुहोस्&nbsp;।</li>
+</ul>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>काममा नआउनुहोस् ।</li>
+<li>यदि तपाईं <em>contact tracers</em> जस्ता जनस्वास्थ्य अधिकारीहरूसँग सम्पर्कमा रहनुभएको छ भने, वहाँहरूको मार्गदर्शनको पालना गर्नुहोस्&nbsp;।</li>
+<li>यदि तपाईंले अहिलेसम्म जनस्वास्थ्य मार्गदर्शन पाउनुभएको छैन भने, क्याम्पसमा काममा <a href="https://hr.wisc.edu/smart-restart/#returning-to-workplace">फर्कनु अघि</a> <a href="https://www.uhs.wisc.edu/make-an-appointment/"><em>University Health Services</em></a> लाई सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>तपाईं काममा नआउने कुरा तपाईंको सुपरभाईजरलाई थाहा दिनुहोस्&nbsp;।</li>
+<li>बिदा संसाधनका लागि, तपाईंको स्थानीय वा विभागीय <a href="https://hr.wisc.edu/docs/hr-contacts.pdf">स्थानीय वा विभागीय <em>HR</em></a> वा तपाईंको <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">विभागीय अशक्तता प्रतिनिधिलाई</a> (<em>DDR</em>) सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>गोपनीय स्वास्थ्यको जानकारी थाहा दिनको लागि, तपाईंको <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">विभागीय अशक्तता प्रतिनिधिलाई</a> (<em>DDR</em>) सम्पर्क गर्नुहोस्&nbsp;।</li>
+</ul>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+<li>काममा नआउनुहोस् ।</li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">१४ दिनको क्वारेन्टाइन सुरु गर्नुहोस्&nbsp;।</a></li>
+<li>यदि <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><em>COVID-19</em> का लक्षणहरू</a> देखा परे भने, मूल्याङ्कन वा <em>COVID-19</em> को परीक्षणको लागि तपाईंको स्वास्थ्य सेवा प्रदायकलाई सम्पर्क गर्नुहोस् । क्याम्पसमा परीक्षणहरू उपलब्ध छन् र <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx"><em>MyUHS</em></a> बाट यसको लागि समय बनाउन सकिन्छ&nbsp;।</li>
+<li>तपाईं काममा नआउने कुरा तपाईंको सुपरभाईजरलाई थाहा दिनुहोस्&nbsp;।</li>
+<li>बिदा संसाधनका लागि, तपाईंको स्थानीय वा विभागीय <a href="https://hr.wisc.edu/docs/hr-contacts.pdf">स्थानीय वा विभागीय <em>HR</em></a> वा तपाईंको <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">विभागीय अशक्तता प्रतिनिधिलाई</a> (<em>DDR</em>) सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>गोपनीय स्वास्थ्यको जानकारी थाहा दिनको लागि, तपाईंको <a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">विभागीय अशक्तता प्रतिनिधिलाई</a> (<em>DDR</em>) सम्पर्क गर्नुहोस्&nbsp;।</li>
+<li>१४ दिनको क्वारेन्टाइन र <em>COVID-19</em> को लक्षणहरू नभएपछि मात्र क्याम्पसमा फर्कनुहोस्&nbsp;।</li>
+<li>रोग नियन्त्रण तथा रोकथामको यो (<em>Centers for Disease Control</em>) <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">थप मार्गदर्शन</a> हेर्नुहोस्&nbsp;।</li>
+
+{% endblock %}

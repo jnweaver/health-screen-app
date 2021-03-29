@@ -1,0 +1,74 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+
+    <p>许多人在维护威大-麦迪逊分校社区的安全方面发挥着作用–其中包括您。</p>
+<p>请在每天准备来校之前回答这些问题。</p>
+<p>只要我们齐心协力，就能保护威大-麦迪逊分校社区的安全：</p>
+<ul>
+<li>在任何可能的地方都要与他人保持身体距离（至少六英尺）。</li>
+<li>我们要求大家在我校所有室内公共场所（包括教室）和无法保持身体距离的室外空间都必须佩戴口罩。我们会为那些因残障、医疗或其它原因无法佩戴口罩的人提供便利安排。</li>
+<li>勤洗手。</li>
+</ul>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>不要来学校。</li>
+<li>联系您的医护人员进行<em>COVID-19</em>检测或是征得可以来学校的许可。</li>
+<li>在您的检测结果呈阴性或医护人员允许您来学校前，请不要来学校。</li>
+<li>参考由疾病控制中心（<em>Centers for Disease Control</em>）发布的<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">额外指导意见</a>。</li>
+</ul>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>不要来学校。</li>
+<li>如果您已经和公共卫生人员（例如接触者追踪调查员/<em>contact tracers</em>）有过交流，请遵循他们的指导意见。</li>
+<li>如果您还没有收到公共卫生指导意见，请在返回校园之前联系<a href="https://www.publichealthmdc.com">麦迪逊与戴恩郡公共卫生部（<em>Public Health Madison &amp; Dane County</em></a><u>）</u>。</li>
+</ul>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+    <ul>
+<li>不要来学校。</li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">开始14天的自我隔离。</a></li>
+<li>如果出现<a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><em>COVID-19</em>症状</a>，联系您的医护人员进行评估或是进行<em>COVID-19</em> 检测。</li>
+<li>在结束14天的自我隔离并确认没有<em>COVID-19</em>症状后才可以返回校园。</li>
+</ul>
+<p>参考由疾病控制中心（<em>Centers for Disease Control</em>）发布的<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">额外指导意见</a>。</p>
+  
+{% endblock %}

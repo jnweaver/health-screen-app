@@ -1,0 +1,84 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+  
+<p>威大-麦迪逊分校的员工在维护我们社区的 安全方面发挥着重要的作用--其中包括您。</p>
+<p>请在每天准备来校工作之前回答这些问题。</p>
+<p>只要我们齐心协力，就能保护我们校园社区
+的安全:</p>
+<ul>
+<li>在任何可能的地方都要与他人保 持身体距离(至少六英尺)。</li>
+<li>我们要求大家在我校所有室内公 共场所(包括教室)和无法保持 身体距离的室外空间都必须佩戴 口罩。我们会为那些因残障、医 疗或其它原因无法佩戴口罩的人 提供便利安排。</li>
+<li>勤洗手。</li>
+</ul>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>不要来到工作场所。</li>
+<li>联系您的医护人员进行<em>COVID-19</em>检测或是征得可以来工作地点上班的许可。您也可以通过<a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx"><em>MyUHS</em></a>预约在校内接受检测。</li>
+<li><a href="https://hr.wisc.edu/smart-restart/#returning-to-workplace">遵守有关返回工作地点的指导意见</a>。</li>
+<li>通知您的主管您不能来上班。</li>
+<li>请联系您<a href="https://hr.wisc.edu/docs/hr-contacts.pdf">所在部门的人力资源办公室</a>，咨询有关使用假期的事宜。</li>
+<li>如需分享保密的医疗信息，请联系您<a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">所在部门的残障事务负责</a><u>人</u>（<em>Divisional Disability Representative, DDR</em>）。</li>
+<li>参考由疾病控制中心（<em>Centers for Disease Control</em>）发布的<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">额外指导意见</a>。</li>
+</ul>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>不要来到工作场所。</li>
+<li>如果您已经和公共卫生人员（例如接触者追踪调查员/<em>contact tracers</em>）有过交流，请遵循他们的指导意见。</li>
+<li>如果您还没有收到公共卫生指导意见，请在<a href="https://hr.wisc.edu/smart-restart/#returning-to-workplace">返回</a>工作地点上班之前联系<a href="https://www.uhs.wisc.edu/make-an-appointment/">校医务所（<em>University Health Services</em></a><u>）</u>获取指导意见。</li>
+<li>通知您的主管您不能来上班。</li>
+<li>请联系您<a href="https://hr.wisc.edu/docs/hr-contacts.pdf">所在部门的人力资源办公室</a>或<a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">所在部门的残障事务负责</a><u>人</u>（<em>Divisional Disability Representative, DDR</em>），咨询有关使用假期的事宜。</li>
+<li>如需分享保密的医疗信息，请联系您<a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">所在部门的残障事务负责</a><u>人</u>（<em>Divisional Disability Representative, DDR</em>）。</li>
+</ul>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+    <ul>
+<li>不要来到工作场所。</li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">开始14天的自我隔离。</a></li>
+<li>如果出现<a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><em>COVID-19</em>症状</a>，联系您的医护人员进行评估或是进行<em>COVID-19</em> 检测。您也可以通过<a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx"><em>MyUHS</em></a>预约在校内接受检测。</li>
+<li>通知您的主管您不能来上班。</li>
+<li>请联系您<a href="https://hr.wisc.edu/docs/hr-contacts.pdf">所在部门的人力资源办公室</a>或<a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">所在部门的残障事务负责</a><u>人</u>（<em>Divisional Disability Representative, DDR</em>），咨询有关使用假期的事宜。</li>
+<li>如需分享保密的医疗信息，请联系您<a href="https://employeedisabilities.wisc.edu/divisional-disability-representatives-ddr/">所在部门的残障事务负责</a><u>人</u>（<em>Divisional Disability Representative, DDR</em>）。</li>
+<li>在结束14天的自我隔离并确认没有<em>COVID-19</em>症状后才可以返回校园。</li>
+</ul>
+<p>参考由疾病控制中心（<em>Centers for Disease Control</em>）发布的<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">额外指导意见</a>。</p>
+  
+{% endblock %}

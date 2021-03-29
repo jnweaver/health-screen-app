@@ -1,0 +1,42 @@
+.ci-event {
+  h3 {
+    margin-top:0;
+    @media (min-width:40em) {
+      margin-top:1.8rem;
+    }
+  }
+  a {
+    text-decoration:none !important;
+    &:hover {
+      span {
+        text-decoration:underline;
+        &.ci-event-date {
+          text-decoration:none;
+        }
+      }
+    }
+  }
+  span {
+    display:block;
+    text-transform:none !important;
+    font-size:1.125rem;
+    &.ci-event-subtitle {
+      color:$uw_main;
+    }
+    &.ci-event-date {
+      text-transform:uppercase !important;
+      color:$uw_red;
+      font-size:0.875rem;
+    }
+  }
+  .ci-event-descr {
+    display:none;
+    @media (min-width:40em) {
+      display:block;
+    }
+    p {
+      line-height:1.2;
+    }
+
+  }
+}

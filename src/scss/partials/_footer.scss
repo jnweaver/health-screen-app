@@ -1,0 +1,65 @@
+.uws-footer-links {
+  position:relative;
+  &:before {
+    content:'';
+    position:absolute;
+    background:white url(images/education-bg-subfooter.svg) 0 0 no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:1;
+  }
+  &:after {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: #b90000;
+    z-index: 2;
+    opacity: 0.68;
+  }
+  .uw-inner-row {
+    position:relative;
+    z-index:10;
+    &:after {
+      content:'';
+      display:block;
+      clear:both;
+    }
+  }
+  .equal-column {
+    padding-right:4rem !important;
+    padding-left:4rem !important;
+    @media (min-width:40em) {
+      padding-right:5rem !important;
+      padding-left:5rem !important;
+    }
+    @media (min-width:63.75em) {
+      padding-right:6rem !important;
+      padding-left:6rem !important;
+    }
+
+  }
+  h2 {
+    font-size: 1.375rem;
+    &:before {
+      display:none;
+    }
+  }
+  a {
+    text-decoration:none !important;
+    font-weight:700;
+    &:hover {
+      text-decoration:underline !important;
+    }
+  }
+  li {
+    margin-bottom:0.25rem;
+  }
+
+}

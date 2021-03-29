@@ -1,0 +1,81 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+
+    <p>तपाईं सहित हाम्रो समुदायलाई सुरक्षित राख्नका लागि <em>UW-Madison</em> का विद्यार्थीहरूले महत्त्वपूर्ण भूमिका खेल्दछन्&nbsp;।</p>
+<p>तपाईं क्याम्पसमा आउनु अघि कृपया प्रत्येक दिन यी प्रश्नहरूको उत्तर दिनुहोस्&nbsp;।</p>
+<p>साथमा हामीले हाम्रो क्याम्पस समुदायलाई सुरक्षित राख्न सक्दछौं:</p>
+<ul>
+<li>जहाँ सक्नुहुन्छ भौतिक दूरी (कमसेकम छ फिट) कायम राख्नुहोस्&nbsp;।</li>
+<li>क्याम्पसको कक्षाकोठा सहित सबै भित्री सार्वजानिक ठाउँहरूमा, र भौतिक दूरी कायम गर्न नसकिने बाहिरी ठाउँहरूमा अनुहार ढाक्ने चीजहरू अनिवार्य छ । अशक्तता, स्वास्थ्य, वा अरू कुनै कारणहरूले सो गर्न नसक्ने व्यक्तिहरूलाई व्यवस्था मिलाउन सकिनेछ&nbsp;।</li>
+<li>तपाईंको हात बारम्बार धुनुहोस्&nbsp;।</li>
+</ul>
+<p><em>Badgers</em> हरूले एक अर्काको खयाल राख्दछन् । यदि तपाईंलाई थप संसाधन वा सहायताको आवश्यकता भएमा, सम्पर्क गर्नुहोस्:</p>
+<ul>
+<li><a href="https://www.uhs.wisc.edu"><em>University Health Services</em></a> 608-265-5600</li>
+<li><a href="https://doso.students.wisc.edu"><em>Dean of Students Office</em></a> 608-263-5700</li>
+</ul>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>क्याम्पसमा नआउनुहोस् । यदि तपाईं अहिले युनिभर्सिटीको आवास हलमा बस्दै हुनुहुन्छ भने, स्वास्थ्य हेरचाह गर्न बाहेक आफ्नै कोठामा रहनुहोस्&nbsp;।</li>
+<li><a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx"><em>MyUHS</em></a> बाट <em>COVID-19</em> को परीक्षण गर्ने समय बनाउनुहोस्&nbsp;।</li>
+<li>युनिभर्सिटी आवास हलको आफ्नै कोठामा रहनुहोस् वा तपाईंको परीक्षणको नतिजा नेगेटिभ नभएसम्म वा <em>University Health Services</em> ले तपाईंलाई क्याम्पसमा फर्कन अनुमति नदिएसम्म क्याम्पसबाट टाढा रहनुहोस्&nbsp;।</li>
+<li>रोग नियन्त्रण तथा रोकथामको यो (<em>Centers for Disease Control</em>) <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">थप मार्गदर्शन</a> हेर्नुहोस्&nbsp;।</li>
+</ul>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>क्याम्पसमा नआउनुहोस्&nbsp;।</li>
+<li>यदि तपाईं अहिले युनिभर्सिटीको आवास हलमा बस्दै हुनुहुन्छ भने, आफ्नै कोठामा रहनुहोस्&nbsp;।</li>
+<li>यदि तपाईं <em>contact tracers</em> जस्ता जनस्वास्थ्य अधिकारीहरूसँग सम्पर्कमा रहनुभएको छ भने, वहाँहरूको मार्गदर्शनको पालना गर्नुहोस्&nbsp;।</li>
+<li>यदि तपाईंले अहिलेसम्म जनस्वास्थ्य मार्गदर्शन पाउनुभएको छैन भने, तपाईंको कोठाबाट बाहिर निस्कन वा क्याम्पसमा फर्कनु अघि <a href="https://www.uhs.wisc.edu/make-an-appointment/"><em>University Health Services</em></a> लाई सम्पर्क गरेर मार्गदर्शन लिनुहोस्&nbsp;।</li>
+</ul>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+    <ul>
+<li>क्याम्पसमा नआउनुहोस्&nbsp;।</li>
+<li>यदि तपाईं अहिले युनिभर्सिटीको आवास हलमा बस्दै हुनुहुन्छ भने, आफ्नै कोठामा रहनुहोस्&nbsp;।</li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">१४ दिनको क्वारेन्टाइन सुरु गर्नुहोस्&nbsp;।</a></li>
+<li>यदि <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><em>COVID-19</em> का लक्षणहरू</a> देखा परे भने, <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx"><em>MyUHS</em></a> बाट <em>COVID-19</em> को परीक्षण गर्ने समय बनाउनुहोस्&nbsp;।</li>
+<li>१४ दिनको क्वारेन्टाइन र <em>COVID-19</em> को लक्षणहरू नभएपछि मात्र क्याम्पसमा फर्कनुहोस्&nbsp;।</li>
+<li>रोग नियन्त्रण तथा रोकथामको यो (<em>Centers for Disease Control</em>) <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">थप मार्गदर्शन</a> हेर्नुहोस्&nbsp;।</li>
+</ul>
+  
+{% endblock %}

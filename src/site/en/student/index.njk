@@ -1,0 +1,83 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+
+{% block panel_5 %}
+<p>UW-Madison students play an important part in keeping our community safe — including you.</p>
+
+<p>Please answer these questions every day before you plan to come to campus.</p>
+
+<p>Together we can keep our campus community safe:</p>
+<ul>
+  <li>Maintain physical distancing (minimum six feet) wherever possible.</li>
+  <li>Face coverings are required to be worn in all campus indoor public spaces, including classrooms, and outside when physical distancing is not possible. Accommodations may be made for those unable to do this for disability, medical, or other reasons.</li>
+  <li>Wash your hands often.</li>
+</ul>
+<p>Badgers take care of each other. If you need additional resources or help, contact:</p>
+<ul>
+  <li><a href="https://www.uhs.wisc.edu">University Health Services</a> <a href="tel:608-265-5600">608-265-5600</a></li>
+  <li><a href="https://doso.students.wisc.edu">Dean of Students Office</a> <a href="tel:608-263-5700">608-263-5700</a></li>
+</ul>
+{% endblock %}
+
+
+{% set guidance_1_2 = '<h2>Guidance for Students</h2>
+<ul class="uw-padding-top-2 uw-list-tight">
+  <li>Do not come to campus. If you live in a university residence hall, remain in your room aside from seeking medical care.</li>
+  <li>Schedule an appointment for a COVID-19 test on campus through <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx">MyUHS</a>.</li>
+  <li>Remain in your residence hall room or away from campus until your test result is negative or until University Health Services approves your return to campus.</li>
+  <li>Refer to this <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">additional guidance</a> from the Centers for Disease Control.</li>
+</ul>' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+<h2>Guidance for Students</h2>
+<ul class="uw-padding-top-2 uw-list-tight">
+  <li>Do not come to campus.</li>
+  <li>If you currently live in a university residence hall, remain in your room.</li>
+  <li>If you have been in contact with public health officials, such as contact tracers, follow their guidance.</li>
+  <li>If you have not yet received public health guidance, contact <a href="https://www.uhs.wisc.edu/make-an-appointment/">University Health Services</a> for guidance prior to leaving your room or returning to campus.</li>
+</ul>
+{% endblock %}
+
+
+{% block guidance_4 %}
+<h2>Guidance for Students</h2>
+<ul class="uw-padding-top-2 uw-list-tight">
+  <li>Do not come to campus.</li>
+  <li>If you currently live in a university residence hall, remain in your room.</li>
+  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Begin a 14-day self-quarantine.</a></li>
+  <li>If <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">COVID-19 symptoms</a> develop, schedule a COVID-19 test on campus through <a href="https://myuhs.uhs.wisc.edu/login_dualauthentication.aspx">MyUHS</a>.</li>
+  <li>Return to campus only after a 14-day self-quarantine and having no COVID-19 symptoms.</li>
+  <li>Refer to this <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">additional guidance</a> from the Centers for Disease Control.</li>
+</ul>
+{% endblock %}

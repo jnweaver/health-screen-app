@@ -1,0 +1,43 @@
+
+.intro-copy {
+  caption, dl dd, dl dt, li, p, td, th {
+    font-size: 1.25rem;
+    @media (min-width:40em) {
+      font-size:1.5rem;
+    }
+  }
+}
+
+// Control row vertical padding
+.uw-outer-row.uw-row-padding-top-0 {
+  padding-top: 0rem;
+}
+.uw-outer-row.uw-row-padding-top-1 {
+  padding-top: 1rem;
+}
+.uw-outer-row.uw-row-padding-top-2 {
+  padding-top: 2rem;
+}
+.uw-outer-row.uw-row-padding-top-3 {
+  padding-top: 3rem;
+}
+.uw-outer-row.uw-row-padding-bottom-0 {
+  padding-bottom: 0;
+}
+.uw-outer-row.uw-row-padding-bottom-1 {
+  padding-bottom: 1rem;
+}
+.uw-outer-row.uw-row-padding-bottom-2 {
+  padding-bottom: 2rem;
+}
+.uw-outer-row.uw-row-padding-bottom-3 {
+  padding-bottom: 3rem;
+}
+
+// uw-row-narrow: makes inner-row narrower;
+.uw-outer-row.uw-row-narrow .uw-inner-row {
+  max-width: 50rem;
+}
+.uw-outer-row.uw-row-medium .uw-inner-row {
+  max-width: 60rem;
+}

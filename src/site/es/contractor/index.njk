@@ -1,0 +1,74 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+{% block panel_5 %}
+  
+    <p>Muchas personas tienen un papel/rol importante en mantener la seguridad de la comunidad de UW-Madison, incluido usted.</p>
+<p>Por favor, responda estas preguntas cada día antes de disponerse a venir a una de las instalaciones de UW-Madison.<br>
+Juntos podemos mantener segura la comunidad del campus de UW-Madison:</p>
+<ul>
+<li>Mantenga el distanciamiento físico (mínimo seis pies) siempre que sea posible.</li>
+<li>Hay que llevar mascarillas en todos los espacios públicos interiores del campus, incluyendo las aulas, y en el exterior cuando el distanciamiento físico no sea posible. Para aquellos que no puedan hacerlo por razones de discapacidad, médicas o de otro tipo, se podrán hacer acomodaciones.</li>
+<li>Lávese las manos con frecuencia.</li>
+</ul>
+  
+{% endblock %}
+
+{% set guidance_1_2 = '
+    <ul>
+<li>No venga a las instalaciones de UW-Madison.</li>
+<li>Póngase en contacto con su proveedor de atención médica para hacerse una prueba de COVID-19 o recibir autorización para estar en el campus.</li>
+<li>No regrese al lugar de trabajo en el campus hasta que el resultado de su prueba dé negativo o su proveedor de atención médica le aconseje que puede regresar al trabajo.</li>
+<li>Consulte esta guía adicional (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html"><em>additional guidance</em></a>) de los Centros para el Control de Enfermedades.</li>
+</ul>
+  ' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+
+    <ul>
+<li>No venga al campus.</li>
+<li>Si ha estado en contacto con funcionarios de salud pública, como rastreadores de contactos, siga sus indicaciones.</li>
+<li>Si aún no ha recibido indicaciones de salud pública, póngase en contacto con Salud pública de Madison y el condado de Dane (<a href="https://www.publichealthmdc.com"><em>Public Health Madison &amp; Dane County</em></a>) antes de regresar al campus.</li>
+</ul>
+  
+{% endblock %}
+
+
+{% block guidance_4 %}
+
+    <ul>
+<li>No venga al campus.</li>
+<li>Comience una cuarentena de 14 días (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html"><em>Begin a 14-day self-quarantine</em></a>).</li>
+<li>Si desarrolla síntomas de COVID-19 (<a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><em>COVID-19 symptoms</em></a>), comuníquese con su proveedor de atención médica para una evaluación o para hacerse una prueba de COVID-19.</li>
+<li>Solo regrese al campus tras una cuarentena de 14 días y sin tener síntomas de COVID-19.</li>
+</ul>
+<p>Consulte esta guía adicional (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html"><em>additional guidance</em></a>) de los Centros de Control de Enfermedades.</p>
+  
+{% endblock %}

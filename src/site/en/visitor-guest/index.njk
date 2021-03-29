@@ -1,0 +1,76 @@
+---
+---
+{% extends 'layouts/app.njk' %}
+
+{% block panel_1 %}
+  {% include "../partials/panel_1.njk" %}
+{% endblock %}
+
+
+{% block panel_2 %}
+  {% include "../partials/panel_2.njk" %}
+{% endblock %}
+
+
+{% block panel_3 %}
+  {% include "../partials/panel_3.njk" %}
+{% endblock %}
+
+
+{% block panel_4 %}
+  {% include "../partials/panel_4.njk" %}
+{% endblock %}
+
+
+{% block panel_5 %}
+<p>Many people play a part in keeping the UW–Madison community safe — including you.</p>
+
+<p>Please answer these questions every day before you plan to come to campus.</p>
+
+<p>Together we can keep the UW–Madison campus community safe:
+</p>
+<ul>
+  <li>Maintain physical distancing (minimum six feet) wherever possible.</li>
+  <li>Face coverings are required to be worn in all campus indoor public spaces, including classrooms, and outside when physical distancing is not possible. Accommodations may be made for those unable to do this for disability, medical, or other reasons.</li>
+  <li>Wash your hands often.</li>
+</ul>
+{% endblock %}
+
+{% set guidance_1_2 = '<h2>Guidance for Visitors and Guests</h2>
+  <ul class="uw-padding-top-2 uw-list-tight">
+    <li>Do not come to campus.</li>
+    <li>Contact your healthcare provider for a COVID-19 test or approval to be on campus.</li>
+    <li>Do not come to campus until your test result is negative or your healthcare provider advises you are safe to go to campus.</li>
+    <li>Refer to this <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fhcp%2Fguidance-prevent-spread.html">additional guidance</a> from the Centers for Disease Control.</li>
+  </ul>' %}
+
+{% block guidance_1 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_2 %}
+{{ guidance_1_2 | safe }}
+{% endblock %}
+
+
+{% block guidance_3 %}
+  <h2>Guidance for Visitors and Guests</h2>
+  <ul>
+    <li>Do not come to campus.</li>
+    <li>If you have been in contact with public health officials, such as contact tracers, follow their guidance.</li>
+    <li>If you have not yet received public health guidance, contact <a href="https://www.publichealthmdc.com">Public Health Madison &amp; Dane County</a> prior to returning to campus.</li>
+  </ul>
+{% endblock %}
+
+
+{% block guidance_4 %}
+  <h2>Guidance for Visitors and Guests</h2>
+  <ul>
+    <li>Do not come to campus.</li>
+    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Begin a 14-day self-quarantine.</a></li>
+    <li>If <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">COVID-19 symptoms</a> develop, contact your healthcare provider for assessment or a COVID-19 test.</li>
+    <li>Return to campus only after a 14-day self-quarantine and having no COVID-19 symptoms.</li>
+    <li>Refer to this <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">additional guidance</a> from the Centers for Disease Control.</li>
+  </ul>
+{% endblock %}

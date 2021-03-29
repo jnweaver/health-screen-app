@@ -1,0 +1,220 @@
+.button {
+  font-family:$heading_font;
+  &.blue {
+    border: 2px solid $uw_anchor_blue;
+    color: $white !important;
+    background:$uw_anchor_blue;
+    text-decoration:none !important;
+    text-transform:uppercase;
+    font-weight:800;
+    &:hover, &:focus {
+      background:$white;
+      color:$uw_anchor_blue !important;
+      border-color:$uw_anchor_blue;
+    }
+  }
+  &.hollow {
+    &.white {
+      border: 2px solid white;
+      color: white;
+      text-decoration:none;
+      text-transform:uppercase;
+      font-weight:800;
+      font-size:0.9375rem;
+      &:hover, &:focus {
+        background:white;
+        color:$uw_red;
+        border-color:white;
+      }
+    }
+    &.blue {
+      border: 2px solid $uw_anchor_blue;
+      color: $uw_anchor_blue !important;
+      background:white;
+      text-decoration:none;
+      text-transform:uppercase;
+      font-weight:800;
+
+      &:hover, &:focus {
+        background:$uw_anchor_blue;
+        color:white !important;
+        border-color:$uw_anchor_blue;
+      }
+    }
+  }
+
+}
+.ci-loader {
+  visibility:hidden;
+  height:50px;
+  background:url(images/ajax-loader.gif) center top no-repeat;
+  &.loading {
+    visibility:visible;
+  }
+}
+.ci-footer-header-social {
+  text-transform:none;
+}
+.ci-story-container {
+  //min-height:250px;
+}
+.ci-no-stories {
+  margin-top:2rem;
+}
+.ci-no-mini-bar {
+  h2 {
+    color:$uw_main_dk;
+    text-transform:none;
+    font-size:2.5rem;
+    &:before {
+      display:none;
+    }
+  }
+
+}
+.ci-abstract-bg {
+  position:relative;
+  background-color:$uw_main !important;
+  &.uw-outer-row.default-background:nth-child(even) {
+    .uw-content-box {
+      background:transparent !important;
+    }
+  }
+  &.has_group_of_links {
+
+    .uw-column {
+      padding-bottom:0 !important;
+      .uw-content-box {
+        padding-bottom:0;
+      }
+      @media (min-width:40em) {
+
+        .uw-content-box {
+          padding-bottom:1rem;
+        }
+      }
+    }
+  }
+  .uw-inner-row {
+    position:relative;
+    z-index:10;
+  }
+  .uw-content-box {
+    background:transparent !important;
+  }
+  &:before {
+    content:'';
+    position:absolute;
+    background:white url(images/education-bg-subfooter.svg) 0 0 no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:1;
+  }
+  &:after {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: #b90000;
+    z-index: 2;
+    opacity: 0.68;
+  }
+  h2 {
+    color:$white !important;
+    text-transform:uppercase;
+    font-size:1.375rem;
+    margin-bottom:0 !important;
+  }
+
+}
+.ci-three-column {
+  .uw-inner-row {
+    justify-content:center;
+  }
+  .three-column {
+    @media (min-width:40em) {
+      flex:0 0 50% !important;
+      max-width:50% !important;
+      margin-bottom:2rem;
+    }
+    @media (min-width:60em) {
+      flex:0 0 33.33% !important;
+      max-width:33.33% !important;
+      margin-bottom:0;
+    }
+  }
+}
+.ci-no-link-box {
+  .uw-content-box {
+    background:transparent !important;
+    border-bottom:0;
+    .uw-link-list li {
+      a {
+        color:$white !important;
+        text-transform:none;
+        font-size:1.125rem;
+        font-weight:700;
+        svg {
+          display:none;
+        }
+        &:hover {
+          text-decoration:underline !important;
+        }
+      }
+    }
+
+  }
+}
+.ci-quote-link {
+  margin-top:2rem;
+}
+.flex-container {
+  display:block !important;
+  @media (min-width:35em) {
+    display:flex !important;
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+}
+.flex-child-25 {
+  max-width:100%;
+  border-left:5px solid $uw_red;
+  padding:1rem;
+  background:$white;
+  margin-bottom:1rem;
+  @include drop_shadow();
+  @media (min-width:35em) {
+    flex:0 0 50%;
+    max-width:calc(50% - 0.5rem);
+  }
+  @media (min-width:60em) {
+    flex:0 0 25%;
+    max-width:calc(25% - 1rem);
+    margin-bottom:2rem;
+  }
+  h3 {
+    margin-top:1rem;
+
+    span {
+      font-size:0.875rem;
+      text-transform:uppercase;
+      display:block;
+      color:$uw_red;
+      font-weight:700;
+    }
+    a {
+      text-decoration:none !important;
+      text-transform:none;
+      line-height:1.18;
+      &:hover, &:active {
+        text-decoration:underline !important;
+      }
+    }
+  }
+}
